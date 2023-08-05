@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	const api = 'http://' + window.location.hostname;
   const url = 'http://' + window.location.hostname + ':5001/api/v1/status/';
   $.get(url, function (return_val) {
     if (return_val.status === 'OK') {
